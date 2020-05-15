@@ -97,6 +97,9 @@
   }
 }
 
+.cd-timeline__img2 {
+}
+
 .cd-timeline__img {
   display: flex;
   justify-content: center;
@@ -109,8 +112,9 @@
     0 3px 0 4px rgba(#000, 0.05);
 
   img {
-    width: 24px;
-    height: 24px;
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
   }
 
   @include breakpoint(md) {

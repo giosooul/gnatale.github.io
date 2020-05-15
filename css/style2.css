@@ -164,8 +164,8 @@ svg {
   max-width: 100%;
 }
 [data-theme] {
-  background-color: hsl(0, 0%, 100%);
-  background-color: var(--color-bg, #fff);
+  background-color: hsl(208, 39%, 94%);
+  background-color: var(--color-bg, #e8eff5);
   color: hsl(240, 4%, 20%);
   color: var(--color-contrast-high, #313135);
 }
@@ -2953,7 +2953,7 @@ u,
   --color-warning-lighter-h: 46;
   --color-warning-lighter-s: 100%;
   --color-warning-lighter-l: 81%;
-  --color-bg: hsl(0, 0%, 100%);
+  --color-bg: hsl(208, 39%, 94%);
   --color-bg-h: 0;
   --color-bg-s: 0%;
   --color-bg-l: 100%;
@@ -3259,8 +3259,9 @@ mark {
     0 3px 0 4px rgba(0, 0, 0, 0.05);
 }
 .cd-timeline__img img {
-  width: 24px;
-  height: 24px;
+  max-width: 90%;
+  height: auto;
+  width: auto\9; /* ie8 */
 }
 @media (min-width: 64rem) {
   .cd-timeline__img {
@@ -3275,18 +3276,39 @@ mark {
     margin-right: calc(5% - 30px);
   }
 }
-.cd-timeline__img--picture {
+.cd-timeline__img--green {
   background-color: hsl(111, 51%, 60%);
   background-color: var(--cd-color-4);
 }
-.cd-timeline__img--movie {
+.cd-timeline__img--red {
   background-color: hsl(356, 53%, 49%);
   background-color: var(--cd-color-5);
 }
-.cd-timeline__img--location {
+.cd-timeline__img--yellow {
   background-color: hsl(47, 85%, 61%);
   background-color: var(--cd-color-6);
 }
+
+.cd-timeline__img--yellow {
+  background-color: hsl(47, 85%, 61%);
+  background-color: var(--cd-color-6);
+}
+
+.cd-timeline__img--cyan {
+  background-color: hsl(216, 100%, 76%);
+  background-color: #85b6ff;
+}
+
+.cd-timeline__img--orange {
+  background-color: hsl(32, 100%, 76%);
+  background-color: #ffc685;
+}
+
+.cd-timeline__img--base {
+  background-color: hsl(205, 39%, 89%);
+  background-color: #d8e5ee;
+}
+
 .cd-timeline__content {
   -ms-flex-positive: 1;
   flex-grow: 1;

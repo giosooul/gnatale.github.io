@@ -3299,6 +3299,16 @@ mark {
   background-color: #85b6ff;
 }
 
+.cd-timeline__img--blue {
+  background-color: hsl(216, 83%, 35%);
+  background-color: #0f4ba5;
+}
+
+.cd-timeline__img--violet {
+  background-color: hsl(278, 89%, 72%);
+  background-color: #c879f7;
+}
+
 .cd-timeline__img--orange {
   background-color: hsl(32, 100%, 76%);
   background-color: #ffc685;
@@ -3307,6 +3317,11 @@ mark {
 .cd-timeline__img--base {
   background-color: hsl(205, 39%, 89%);
   background-color: #d8e5ee;
+}
+
+.dots {
+  float:right;
+  width: 60px;
 }
 
 .cd-timeline__content {

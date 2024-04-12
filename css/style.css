@@ -205,11 +205,18 @@ main {
   font-family: "Patrick Hand", cursive;
 }
 
-.dark {
+/* .dark {
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
   --bg-primary: #23232e;
   --bg-secondary: #141418;
+} */
+
+.dark {
+  --text-primary: #b6b6b6;
+  --text-secondary: #ececec;
+  --bg-primary: #0d0d47;
+  --bg-secondary: #22225e;
 }
 
 .light {

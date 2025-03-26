@@ -4,6 +4,7 @@ body {
 
 h2 {
   font-family: "Open Sans", sans-serif !important;
+  color: #B4692E;
 }
 
 .svg-icon {
@@ -215,7 +216,8 @@ main {
 .dark {
   --text-primary: #b6b6b6;
   --text-secondary: #ececec;
-  --bg-primary: #0d0d47;
+  /* --bg-primary: #0d0d47; */
+  --bg-primary: #071B49;
   --bg-secondary: #22225e;
 }
 
@@ -561,4 +563,131 @@ Main components
   margin: 3px 2px;
   text-align: center;
   flex-grow: 1;
+}
+
+/* Stile per la card */
+.card {
+  width: 160px;
+  height: 240px;
+  background-color: #F2F6FA;
+  /* border-radius: 10px; */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+  margin-left: 15px;
+  font-family: Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Stile per la card
+.card {
+  width: 180px;
+  height: 250px;
+  background-color: #F2F6FA;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  padding: 15px;
+  font-family: Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+} */
+
+/* Contenitore dell'immagine */
+.card-image {
+  width: 100%;
+  height: 115px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+}
+
+.card-image img {
+  max-width: 100%;
+  border-radius: 3px;
+
+}
+
+/* Posizionamento del contenuto sotto l'immagine */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Stile per il titolo */
+.title {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+/* Stile per l'issuer */
+.issuer {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+/* Stile per il footer */
+.footer {
+  font-size: 10px;
+  color: #AAA;
+}
+
+/* Stile per la struttura HTML */
+.coursera {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* height: 100vh; */
+  background-color: #EAEFF5;
+}
+
+/* Stile per il logo Coursera */
+.courseraimg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.coursera img {
+  width: 80px;
+  height: auto;
+}
+
+.coursera-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  /* padding-top: 20px; */
+  width:80px;
+  height: 15px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/5f/Coursera_logo_%282020%29.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.provided-by {
+  font-family: monospace;
+  font-size: 12px; /* Puoi adattare la dimensione */
+  color: #000; /* Colore del testo */
+  margin-bottom: 30px;
+}
+
+.creedly {
+  display: flex;
+}
+
+.certifications {
+  display: flex;
 }
